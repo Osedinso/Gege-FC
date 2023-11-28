@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set the character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Configure the viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the title of the webpage -->
+    <title>Cooking With You - Contact Us</title>
+    <!-- Link to an external CSS stylesheet for styling -->
+    <link rel="stylesheet" href="contactStyle.css">
+</head>
+<body>
+    <!-- Header section with the website logo and navigation menu -->
+    <header class="header">
+        <div class="container">
+            <!-- Company name or logo -->
+            <h1 class="company-name">Cooking With You</h1>
+        </div>
+    </header>
+    <!-- Contact form section -->
+    <section class="contact-form">
+        <div class="container">
+            <!-- Title for the Contact Us section -->
+            <h2 class="section-title">Contact Us</h2>
+            <!-- Contact form -->
+            <form id="contact-form">
+                <!-- Form field for the user's name -->
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <!-- Form field for the user's email address -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <!-- Error message for invalid email format -->
+                    <span id="email-error" class="error-message"></span>
+                </div>
+                <!-- Form field for the user's message or inquiry -->
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <!-- Submit button for the contact form -->
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <!-- Include an external JavaScript file for form validation and functionality -->
+    <script src="contactScript.js"></script>
+</body>
+<!-- Footer section with navigation links -->
+    <footer>
+        <nav>
+            <ul>
+                <!-- Navigation links to home and contact pages -->
+                <li><a href="Cooking_homePg.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+            </ul>
+        </nav>
+    </footer>
+</html>
