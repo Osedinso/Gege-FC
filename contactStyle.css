@@ -1,0 +1,164 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #808080; /* Gray background */
+    color: #333; /* Dark text color */
+}
+
+.container {
+    max-width: 75%; /* Change the max-width to 75% */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.header {
+    background-image: url('sprinkle.jpg'); /* Set your header image URL */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative; /* Add relative positioning */
+}
+
+/* Add a semi-transparent gradient overlay */
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.company-name {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.company-name:hover {
+    color: #666; /* Dark gray on hover */
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Define different colors for the tabs */
+.home-link {
+    color: #333; /* Dark text color */
+}
+
+.recipes-link {
+    color: #666; /* Dark gray text color */
+}
+
+.contact-form {
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: auto;
+    max-width: 75%;
+}
+
+.section-title {
+    font-size: 24px;
+    color: #333; /* Dark text color */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #666; /* Dark gray border */
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #333; /* Dark text color */
+}
+
+button {
+    background-color: #333; /* Black background */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #666; /* Dark gray on hover */
+}
+
+.placeholder-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+/* Style the footer */
+footer {
+  background-color: #333; /* Background color for the footer */
+  color: #fff; /* Text color for the footer */
+  padding: 20px; /* Add some padding for spacing */
+  text-align: center; /* Center-align the content */
+}
+
+/* Style the navigation links */
+footer nav ul {
+  list-style: none; /* Remove bullet points from the list */
+  padding: 0;
+}
+
+footer nav ul li {
+  display: inline; /* Display the list items horizontally */
+  margin-right: 20px; /* Add spacing between list items */
+}
+
+footer nav ul li a {
+  text-decoration: none; /* Remove underlines from the links */
+  color: #fff; /* Text color for the links */
+  font-weight: bold; /* Make the links bold */
+}
+
+/* Change link styles on hover */
+footer nav ul li a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
