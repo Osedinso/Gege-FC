@@ -7,22 +7,40 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #808080; /* Gray background */
+    background-color: whitesmoke; /* Gray background */
     color: #333; /* Dark text color */
 }
 
 .container {
+    display: flex;
     max-width: 75%; /* Change the max-width to 75% */
     margin: 0 auto;
     padding: 0 20px;
 }
+.logo img {
+    max-height: 100px; /* Adjust logo size */
+}
+.title {
+    flex-grow: 1; /* Expand to fill remaining space */
+    text-align: center; /* Center the text */
+}
+
+.main-title {
+    font-family:  Tahoma, Verdana, sans-serif;/* /
+    font-size: 28px; /* Adjust font size */
+    font-style: italic;
+    color: #fff; /* Text color */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Adjust letter spacing */
+    margin-top: 10px; /* Adjust top margin */
+}
 
 
 .header {
-    background-image: url('sprinkle.jpg'); /* Set your header image URL */
+    background-color: #946a87; /* Background color */
     background-size: cover;
     background-position: center;
-    color: #fff;
+    color:#fff;
     padding: 20px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -50,6 +68,42 @@ body {
 .company-name:hover {
     color: #666; /* Dark gray on hover */
 }
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav ul li:last-child {
+    margin-right: 0;
+}
+/* Define different colors for the tabs */
+.home-link {
+    color: #333; /* Dark text color */
+}
+
+.recipes-link {
+    color: #666; /* Dark gray text color */
+}
+
+
+.nav a {
+    text-decoration: none;
+    color: #333; /* Text color */
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    display: inline-block; /* Ensure links are clickable */
+}
+
+.nav a:hover {
+    color: #007bff; /* Hover color */
+}
 
 nav ul {
     list-style: none;
@@ -76,13 +130,37 @@ nav a {
 }
 
 .contact-form {
+    max-width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+.form-side {
+    flex:1;
     background-color: #fff; /* White background */
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     padding: 40px;
-    margin: auto;
-    max-width: 75%;
+    width: 50%;
+    margin-right: 40px;
 }
+.company-info-side {
+    flex:1;
+    max-width: 75%;
+    font-style:italic;
+    font-family: sans-serif;
+    /* Add styling for the company info side */
+    /* Example styles (modify as needed) */
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-right: 0px;
+}
+
 
 .section-title {
     font-size: 24px;
@@ -161,4 +239,3 @@ footer nav ul li a {
 footer nav ul li a:hover {
   text-decoration: underline; /* Underline links on hover */
 }
-
