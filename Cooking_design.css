@@ -168,6 +168,183 @@ main{
 a{
     text-decoration: none;
 }
+.lower-g{
+    padding-bottom: 0;
+    max-width: 72rem;
+    padding-top: 1rem;
+    margin-top: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: block;
+    --tw-bg-opacity:1;
+}
+.view{
+    display: flex;
+    --tw-text-opacity: 1;
+    background-color: rgb(114, 63, 95,0.9);
+    color: #fff;
+    font-family: ConsulSans-750,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-weight: 700;
+    letter-spacing: .1em;
+    padding: .75rem 1rem .5rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .6s ease-in-out;
+
+}
+.scroll{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    overflow-x: scroll;
+    display: block;
+}
+.allfood{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.grow{
+    width: 6rem;
+    text-align: center;
+    flex-grow: 1;
+    flex-shrink: 0;
+    display: block;
+    tab-size: 4;
+}
+.tit{
+    align-items: center;
+    flex-direction: column;
+    display: flex
+}
+.round{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 9999px;
+    margin-bottom: 0.5rem;
+    max-width: 100%;
+    display: block;
+    overflow: clip;
+}
+.round-txt{
+    width: fit-content;
+    line-height: 1.25;
+    font-weight: 700;
+    font-size: 0.875rem;
+    font-family: ConsulSans-750,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,
+    sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    text-transform: capitalize;
+    color: #000;
+}
+.lower-search{
+    max-width: 46rem;
+    justify-content: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.searchform{
+    position: relative;
+    flex: 1 1 0%;
+    display: block;
+    margin-top: 0em;
+}
+.big-search{
+    --tw-border-opacity: 1;
+    border-color: rgb(153 153 153);
+    border-width: 1px;
+    -tw-shadow: inset 0 4px 0 1px rgba(0,0,0,.075);
+    --tw-shadow-colored: inset 0 4px 0 1px 
+    border-radius: 0;
+    height: 50px;
+    padding: 0.5rem 0.75rem 0.5rem 2.5rem;
+    width: 100%;
+    padding-block: 1px;
+    padding-inline: 2px;
+    display: inline-block;
+    cursor: text;
+    background-color: field;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 410px center;
+}
+.or{
+    display: block;
+    letter-spacing: 0;
+    line-height: 1;
+    font-size: 3.5rem;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-style: italic;
+    font-weight: lighter;
+    color: rgb(114, 64, 97,0.8);
+    margin-top: -0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+footer{
+    background-color: #f5f5f5;
+    clear: left;
+}
+ 
+
+ 
+footer > .verticalNav{
+    float: left;
+    width: 22%;
+}
+ 
+footer > .contactInfo{
+    float: left;
+    width: 34%; 
+}
+
+/* Vertical Nav Styles */
+.verticalNav h1{
+    justify-content: left;
+    padding-left: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.verticalNav ul {
+    margin-left: 1em;
+    line-height: 0em;
+    display: list-item;
+    padding: 0;
+    font-size: 12px;
+    text-align: left;
+    justify-content: left;
+}
+
+.verticalNav img{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.verticalNav a{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.verticalNav a:link, 
+.verticalNav a:visited {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+}
+ 
+.verticalNav a:hover, 
+.verticalNav a:active {
+    color: rgb(255, 136, 57);
+    text-decoration: underline;
+    border-bottom: none;
+}
 
 
 
