@@ -13,6 +13,7 @@
     <meta name ="viewport" content="width=device-width, initial-scale=1" />
     <link href="Cooking_design.css" rel="stylesheet"/>
     <title> Cooking with you</title>
+    
 </head>
 <body>
     <header class="header-background">
@@ -27,7 +28,8 @@
                 
                 <ul>
                     <li><a  href="Cooking_homePg.html">Home</a></li>
-                    <li><a  href="Sign_Up.html">Login</a></li>
+                    <li><a  href="Sign_Up.html">SignUp</a></li>
+                    <li><a  href="recipes.html">Recipes</a></li>
                     <li><a  href="contactUs.html">Contact Us</a></li>
                     <li><input type="text" placeholder="Search.."> 
                         <img id="search" src="search.png"   alt"search icon">
@@ -73,41 +75,109 @@
                 </article>
             </div>
             <div class="lower-g">
-              <a href="#">view all recipes</a>
               <div class="scroll">
                 <ol class="allfood">
-                    <li>
-                        <a href="chillidog.html">
+                    <li class="grow">
+                        <a class="tit" href="chillidog.html">
                             <img class="round" width="183" height="183" src="chilli dog.jpg">
                             <p class="round-txt">Chilli Dog</p>
                         </a>
                     </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li class="grow">
+                        <a class="tit" href="efo.html">
+                            <img class="round" width="183" height="183" src="efo2.jpeg">
+                            <p class="round-txt">Efo riro</p>
+                        </a>
+                    </li>
+                    <li class="grow">
+                        <a class="tit" href="recipes.html">
+                            <img class="round" width="183" height="183" src="pasta.jpg">
+                            <p class="round-txt">Pasta</p>
+                        </a>
+                    </li>
+                    <li class="grow">
+                        <a class="tit" href="recipes.html">
+                            <img class="round" width="183" height="183" src="potatoes.jpg">
+                            <p class="round-txt">Potatoes</p>
+                        </a>
+                    </li>
+                    <li class="grow">
+                        <a class="tit" href="recipes.html">
+                            <img class="round" width="183" height="183" src="wraps.jpg">
+                            <p class="round-txt">Wraps</p>
+                        </a>
+                    </li>
+                    <li class="grow">
+                        <a class="tit" href="recipes.html">
+                            <img class="round" width="183" height="183" src="healthy.jpg">
+                            <p class="round-txt">Healthy</p>
+                        </a>
+                    </li>
+                    <li class="grow">
+                        <a class="tit" href="recipes.html">
+                            <img class="round" width="183" height="183" src="smoothie.jpg">
+                            <p class="round-txt">Smoothie</p>
+                        </a>
+                    </li>
+                    <li class="grow">
+                        <a class="tit" href="recipes.html">
+                            <img class="round" width="183" height="183" src="brunch.jpg">
+                            <p class="round-txt">Brunch</p>
+                        </a>
+                    </li>
+                    <li class="grow">
+                        <a class="tit" href="recipes.html">
+                            <img class="round" width="183" height="183" src="chicken.jpg">
+                            <p class="round-txt">Chicken</p>
+                        </a>
+                    </li>
                 </ol>
               </div>
-              <div></div>  
+              <div class="lower-search">
+                <form method="get" action="recipes.html" class="searchform">
+                    <input class="big-search" type="search" placeholder="Search for recipes">
+                </form>
+                <span class="or">or</span>
+                <a class="view" href="recipes.html">+ view all recipes</a> 
+
+              </div>  
             </div>
-        </section>
-        
-        
+        </section>   
     </main>
+    </br>
     <footer>
-        <h1>ABOUT US</h1>
-        <a href="#">Our Story</a> 
-        <h1>CUSTOMER SERVICE</h1>
-        <a href ="#">Contact Us</a>
-        <h1>POLICIES</h1>
-        <a href ="#">Privacy Policy</a> <a href="#">Terms of Use</a>
-        <address>
-            Cooking with you <br/>
-            4205 Ryan St <br/>
-            Lake Charles, LA 70605 <br/>
-            (800) 622 - 3352
-        </address> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+            // Show the locations on Google Map
+            $(loc).ready(function(){
+                $("#buttonOpen").click(function(){
+                    $("#GoogleMaps").show();
+                });
+            });
+            // Hide the Google Map
+            $(loc).ready(function(){
+                $("#buttonClose").click(function(){
+                    $("#GoogleMaps").hide();
+                });
+            });
+        </script>
+        <nav class="verticalNav">
+            <h1>Socials</h1>
+            <ul>  
+               <li><a href="#"><img id="fbicon" src="fbicon.png" alt="">    Facebook</a></li>
+               <li><a href="#"><img id="twittericon" src="twittericon.png" alt="">  Twitter</a></li>
+               <li><a href="#"><img id="linkedIn" src="lkdnicon.png" alt="">    LinkedIn</a></li>
+               <li><a href="#"><img id="igicon" src="igicon.png" alt="">    Instagram</a></li>
+            </ul>
+        </nav>
+        
+        <nav class="contactInfo">
+            <h1>Visit our stores</h1>
+            <ul>
+                <li><a href="https://www.google.com/maps/search/Warby+Parker/@33.8383369,-99.6119862,5z/data=!3m1!4b1">Find a location</a></li>
+            </ul>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7064739.42762203!2d-99.94614427499998!3d30.163427499999983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8647376a2a60cd81%3A0xdaeae72006cc4506!2sWarby%20Parker%20The%20Woodlands!5e0!3m2!1sen!2sus!4v1682979212087!5m2!1sen!2sus" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p class="credits">&copy; Reference: copyright @ <?php echo date('Y');?> by <span>Fusion</span></p>
+        </nav>
     </footer>
 </body>
 </html>
