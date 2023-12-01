@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #946a87;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+   font-family: Tahoma, Verdana, sans-serif;
+   position: relative; 
+}
+.logo img {
+    max-height: 75px; /* Adjust logo size */
+}
+
+.image-gallery {
+    display: flex; /* Use flexbox to arrange images horizontally */
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Center the images vertically */
+    flex-wrap: wrap; /* Allow images to wrap to the next row if necessary */
+    padding: 20px;
+}
+
+.image-container {
+    margin: 10px;
+    text-align: left;
+}
+
+.image-link {
+    text-decoration: none; /* Remove the underline from the image links */
+    color: #333; /* Link text color */
+    display: block; /* Make the whole image a clickable link */
+}
+
+.text-link {
+    text-decoration: none; /* Remove the underline from the text links */
+    color: #333; /* Link text color */
+    display: block; /* Make the text a clickable link */
+}
+
+img {
+    max-width: 100%; /* Ensure images don't exceed their container's width */
+}
+
+/* Style the footer */
+footer {
+  background-color: #333; /* Background color for the footer */
+  color: #fff; /* Text color for the footer */
+  padding: 20px; /* Add some padding for spacing */
+  text-align: center; /* Center-align the content */
+}
+
+/* Style the navigation links */
+footer nav ul {
+  list-style: none; /* Remove bullet points from the list */
+  padding: 0;
+}
+
+footer nav ul li {
+  display: inline; /* Display the list items horizontally */
+  margin-right: 20px; /* Add spacing between list items */
+}
+
+footer nav ul li a {
+  text-decoration: none; /* Remove underlines from the links */
+  color: #fff; /* Text color for the links */
+  font-weight: bold; /* Make the links bold */
+}
+
+/* Change link styles on hover */
+footer nav ul li a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
