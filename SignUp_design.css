@@ -1,12 +1,21 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: Arvo;
+    src: url(arvo.woff2) format('woff');
+    font-family: Almari;
+    src: url(Almarai-Regular.ttf) format('tiff');
+    font-family: Housttely;
+    src: url(HousttelySignature-GOonZ.ttf) format('tiff');
+}
+
 html{
     background-color: rgb(243, 250, 255);
-    font-family: Urbanist, sans-serif;
+    font-family: Arvo;
 }
 
 body{
-    color: rgb(1, 62, 61);
+    color: rgb(114, 63, 95,0.9);
     background-color: rgb(243, 250, 255);
 }
 
@@ -42,6 +51,16 @@ body{
     margin-bottom: 1.5rem;
     
 }
+.form input{
+    height: 50px;
+    width: 90%;
+    padding: 0 15px;
+    font-size: 17px;
+    margin-bottom: 1.3rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+  }
 
 .form input:focus{
     box-shadow: 0 1px 0 rgba(0,0,0,0.2);
