@@ -1,31 +1,31 @@
-<?php include('config.php'); 
+<?php include('config.php');
 
-session_start();
-$errors = array(); 
+
 if(isset($_POST['submit'])){
 
-   $email = mysqli_real_escape_string($conn, $_POST['email']);
-   $pass = mysqli_real_escape_string($conn, md5($_POST['password']));
-   
-
-   if (count($errors) == 0) {
-    $results = mysqli_query($conn, "SELECT * FROM `users` WHERE email = '$email' AND password = '$pass'") or die('query failed');
-    
-    
-    if (mysqli_num_rows($results) > 0) {
-        $row = mysqli_fetch_assoc($results);
-      $_SESSION['user_id'] = $row['id'];
-      $_SESSION['success'] = "You are now logged in";
-      header('location: Chasma_Pasal_Glasses_Payment.php');
-    }else {
-        array_push($errors, "Wrong username/password combination");
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $pass = mysqli_real_escape_string($conn, md5($_POST['password']));
+    $cpass = mysqli_real_escape_string($conn, md5($_POST['cpassword']));
+ 
+    $select_users = mysqli_query($conn, "SELECT * FROM `users` WHERE email = '$email' AND password = '$pass'") or die('query failed');
+ 
+    if(mysqli_num_rows($select_users) > 0){
+       $message[] = 'user already exists!';
+    }else{
+       if($pass != $cpass){
+          $message[] = 'Passwords do not match!';
+       }else{
+          mysqli_query($conn, "INSERT INTO `users` (email, password) VALUES( '$email', '$cpass')") or die('query failed');
+          $message[] = 'registered successfully!';
+          header('location:login_Page.php');
+       }
     }
-}
+ 
+ }
 
-}
-?>
 
-<!DOCTYPE html>
+ ?>
+ <!DOCTYPE html>
 <html>
     <head lang="en">
         <!--
@@ -66,28 +66,29 @@ if(isset($_POST['submit'])){
             </div>
         </header>
         <section class ="cont">
-            <div class="login form">
-                <h1>Log in</h1>
+            <div class="signUp form">
+                <h1>Create Account</h1>
                 <form action="#" method="post">
                     <input type="email" placeholder="Enter email here" required>
                     <input type="password" placeholder="Enter Password" required>
-                    <button type="submit"> Login</button>
-                    <a href="fgt_pwd.html">Forgot password?</a>
+                    <input type="password" placeholder="Confirm Password" required>
+                    <button type="submit"> Create Account</button>
                 </form>
 
-                <span class="signed">Don't have an account?
-                    <a href="Sign_Up.html">Sign up</a>
+                <span class="signed">Already have an account?
+                    <a href="login.html">Log in</a>
                 </span>
             </div>
+            
         </section>
         <script>
-            // Display an alert message when the form is submitted
-            const form = document.getElementById("payment");
-            form.addEventListener("submit", function(event) {
-                event.preventDefault();
-                alert("Login successful!");
-                location.reload(true);
-            });
-        </script>
+                // Display an alert message when the form is submitted
+                const form = document.getElementById("payment");
+                form.addEventListener("submit", function(event) {
+                    event.preventDefault();
+                    alert("Account created successfully");
+                    location.reload(true);
+                });
+            </script>
     </body>
 </html>
