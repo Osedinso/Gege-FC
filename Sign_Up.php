@@ -64,7 +64,7 @@ if(isset($_POST['submit'])){
                 }
             ?>
               <span class="signup">Already have an account?
-               <a href="login_Page.php">Log in</a>
+               <a href="login.php">Log in</a>
               </span>
             
           </div>
